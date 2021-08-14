@@ -2,16 +2,33 @@
 <html>
 <body>
 <div class="tab">
-  <button class="tablinks" onclick="openAbout(event, 'about')">About</button>
-  <button class="tablinks" onclick="openProject1(event, 'project1')">Project 1</button>
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
-    <p>London is the capital city of England.</p>
-  </div>
-
-  <div id="Project1" class="tabcontent">
-    <h3>Project 1</h3>
-    <p>London is the capital city of England.</p>
-  </div>
+  <button class="tablinks" onclick="openPage(event, 'about')">About</button>
+  <button class="tablinks" onclick="openPage(event, 'project1')">Project 1</button>
 </body>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Project1" class="tabcontent">
+  <h3>Project 1</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<script>
+  function openPage(event, pageName) {
+    var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+</script>
 </html>
