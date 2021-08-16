@@ -45,12 +45,11 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>Tabs</h2>
-<p>Click on the buttons inside the tabbed menu:</p>
-
 <div class="tab">
   <button class="tablinks" onclick="openPage(event, 'about')">About</button>
   <button class="tablinks" onclick="openPage(event, 'project1')">Project 1</button>
+  <button class="tablinks" onclick="openPage(event, 'project2')">Project 2</button>
+  <button class="tablinks" onclick="openPage(event, 'project3')">Project 3</button>
 </div>
 
 <div id="about" class="tabcontent">
@@ -61,9 +60,16 @@ body {font-family: Arial;}
   <h3>Project 1</h3>
 </div>
 
+<div id="project2" class="tabcontent">
+  <h3>Project 2</h3>
+</div>
+
+<div id="project3" class="tabcontent">
+  <h3>Project 3</h3>
+</div>
 
 <script>
-function openPage(event, pageName) {
+function openPage(evt, pageName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -73,7 +79,7 @@ function openPage(event, pageName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(pageName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
