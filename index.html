@@ -41,6 +41,16 @@ body {font-family: Arial;}
   border: 1px solid #ccc;
   border-top: none;
 }
+
+aside {
+    width: 35%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    border: 10px solid #ccc;
+}
+
+
 </style>
 </head>
 <body>
@@ -53,22 +63,29 @@ body {font-family: Arial;}
 </div>
 
 <div id="about" class="tabcontent">
-  <h3>About</h3>
+  <h2>About</h2>
+  <aside>
+  
+  </aside>
+  <h3> Hello, I am Casey Holden and 2nd year Computer Science and Computer Engineering major at Northeastern University. I created this page inorder to display the projects I have worked on.</h3>
+
+
 </div>
 
 <div id="project1" class="tabcontent">
-  <h3>Project 1</h3>
+  <h2>Project 1</h2>
 </div>
 
 <div id="project2" class="tabcontent">
-  <h3>Project 2</h3>
+  <h2>Project 2</h2>
 </div>
 
 <div id="project3" class="tabcontent">
-  <h3>Project 3</h3>
+  <h2>Project 3</h2>
 </div>
 
 <script>
+openPage(event, 'about');
 function openPage(evt, pageName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
