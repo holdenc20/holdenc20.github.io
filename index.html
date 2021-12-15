@@ -2,34 +2,52 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-<div class="tab">
-  <button class="tablinks" onclick="openPage(event, 'about')">About</button>
-  <button class="tablinks" onclick="openPage(event, 'project1')">Project 1</button>
-  <button class="tablinks" onclick="openPage(event, 'project2')">Project 2</button>
-  <button class="tablinks" onclick="openPage(event, 'project3')">Project 3</button>
+<div class="main">
+  <header> Casey Holden</header>
+  <div class="tab">
+    <button class="tablinks" onclick="openPage(event, 'about')">About</button>
+    <button class="tablinks" onclick="openPage(event, 'portfolio')">Portfolio</button>
+    <button class="tablinks" onclick="openPage(event, 'resume')">Resume</button>
+    <button class="tablinks" onclick="openPage(event, 'contact')">Contact</button>
+  </div>
+
+  <div id="about" class="tabcontent">
+    <h1>About</h1>
+    <div class="container">
+      <h2>Contact info: <br>Email: holden.ca@northeastern.edu<br>Phone Number: 858-500-2543</h2>
+      <div class="pictureframe">
+          <img src="face-demo.jpg" alt="face pic">
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div id="about" class="tabcontent">
-  <h2>About</h2>
-
-  <h3> Hello, I am Casey Holden and 2nd year Computer Science and Computer Engineering major at Northeastern University. I created this page inorder to display the projects I have worked on.</h3>
-
-
-</div>
-
-<div id="project1" class="tabcontent">
+<div id="portfolio" class="tabcontent">
   <h2>Project 1</h2>
+  <div class="container">
+    <h2>These are some of the projects I have worked on in class or durring my free time.</h2>
+    <br>
+    <h2> Maze generator and solver </h2>
+    <img src = "face-demo.jpg" alt="face pic">
+    <h2 href = "https://github.com/holdenc20/holdenc20.github.io"> Link to Maze Project on Githut</h2>
+  </div>
 </div>
 
-<div id="project2" class="tabcontent">
+<div id="resume" class="tabcontent">
   <h2>Project 2</h2>
 </div>
 
-<div id="project3" class="tabcontent">
+<div id="contact" class="tabcontent">
   <h2>Project 3</h2>
 </div>
 
