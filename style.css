@@ -3,7 +3,6 @@ body {
   margin: 0% 15%;
   text-align: center;
   background: #dbf1ff;
-  height:
 }
 .main{
   background-color: #ffe3f2;
@@ -13,6 +12,7 @@ body {
   border: 1px solid #ccc;
   height: 1200px;
 }
+
 header{
   font-size: 50px;
   font-family: 'Catamaran', sans-serif;
@@ -50,6 +50,7 @@ header{
 /* Style the tab content */
 .tabcontent {
   background-color: #ffe3f2;
+  float: center;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
