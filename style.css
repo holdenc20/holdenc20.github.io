@@ -1,6 +1,6 @@
 body {
   font-family: Arial;
-  margin: 0% 15%;
+  margin: 0% 0%;
   text-align: center;
   background: #dbf1ff;
 }
@@ -8,7 +8,7 @@ body {
   background-color: #ffe3f2;
   position: relative;
   float: center;
-  width: 85%;
+  width: 90%;
   border: 1px solid #ccc;
   height: 1200px;
 }
