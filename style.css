@@ -1,15 +1,15 @@
 body {
   font-family: Arial;
-  margin: 0% 10%;
+  margin: 0% 0%;
   text-align: center;
-  background: #dbf1ff;
+  background: #C9B6DC;
 }
 .main{
-  background-color: #ffe3f2;
+  background-color: #C9B6DC;
   position: relative;
   float: center;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #C9B6DC;
   height: 1200px;
 }
 
@@ -19,14 +19,16 @@ header{
 }
 /* Style the tab */
 .tab {
+  margin: 0 20%;
+  float: center;
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 5px solid #ffe3f2;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
-  float: center;
+  float: 1px solid #ffe3f2;
   border: none;
   outline: none;
   cursor: pointer;
@@ -37,29 +39,40 @@ header{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #dbf1ff;
-  border: 1px solid #ccc;
+  background-color: #ffe3f2;
+  border: 1px solid #ffe3f2;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #dbf1ff;
-  border: 1px solid #ccc;
+  background-color: #ffe3f2;
+  border: 1px solid #ffe3f2;
 }
 
 /* Style the tab content */
 .tabcontent {
-  background-color: #ffe3f2;
+  background-color: #C9B6DC;
   float: center;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #C9B6DC;
   border-top: none;
 }
 .container {
   display: flex;
 }
 
+.breaker {
+  background-color: #ffe3f2;
+  height: 10px;
+  width: 150%;
+}
+.table tr{
+  margin: 0% 10%;
+}
+
+
 h2 {
+  margin: 0% 10%;
   flex:3;
   padding: 15px 80px
 }
