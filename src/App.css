@@ -92,7 +92,9 @@ footer p {
 }
 
 .column {
+  margin-top: 10vh;
   flex: 1; /* Ensures all columns take up equal width */
+  height: 90vh;
 }
 
 .card {
@@ -102,7 +104,6 @@ footer p {
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 100vh;
 }
 
 .card h2 {
