@@ -79,3 +79,40 @@ footer {
 footer p {
   margin: 0;
 }
+
+
+.hero {
+  display: flex;
+  justify-content: space-between; /* Ensures space between columns */
+  gap: 20px; /* Adds space between the columns */
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.column {
+  flex: 1; /* Ensures all columns take up equal width */
+}
+
+.card {
+  background-color: #fff; /* White card background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555; /* Slightly darker text color */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
