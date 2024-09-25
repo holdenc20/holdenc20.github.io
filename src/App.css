@@ -51,6 +51,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh; /* Make the header fill the entire viewport */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
