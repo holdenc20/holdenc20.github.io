@@ -87,6 +87,8 @@ footer p {
   gap: 20px; /* Adds space between the columns */
   padding: 20px;
   margin-top: 40px;
+  width: 100vh;
+  height: 100vh;
 }
 
 .column {
