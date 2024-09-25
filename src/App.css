@@ -2,41 +2,80 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0); /* Transparent */
+  padding: 15px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: background 0.3s ease; /* Smooth transition for background */
 }
 
-.App-link {
-  color: #61dafb;
+/* Add background on scroll */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds a small shadow on scroll */
 }
 
-.nav {
+/* Navbar links styling */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  background-color: #95DBDA;
-  color: white;
-  height: 12%;
 }
 
-.nav a {
-  color: white;
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff; /* White color for text */
   text-decoration: none;
-  padding: 14px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  background-color: #f4f4f4;
-  color: black;
+/* Hover effect for links */
+.navbar ul li a:hover {
+  color: #ff9900; /* Changes color on hover */
 }
 
-.nav a.active {
-  background-color: #f4f4f4;
-  color: black;
+header {
+  background-image: url('path-to-your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Make the header fill the entire viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Main content section */
+main {
+  padding-top: 80px; /* Add space for the fixed navbar */
+}
+
+/* Basic section styles */
+section {
+  padding: 60px 20px;
+}
+
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Add some spacing for footer */
+footer p {
+  margin: 0;
 }
