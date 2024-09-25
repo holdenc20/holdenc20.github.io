@@ -22,4 +22,21 @@
   justify-content: space-between;
   background-color: #95DBDA;
   color: white;
+  height: 12%;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.nav a:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #f4f4f4;
+  color: black;
 }
