@@ -86,11 +86,10 @@ footer p {
 
 
 .hero {
-  display: flex;
-  justify-content: space-between; /* Ensures space between columns */
   gap: 20px; /* Adds space between the columns */
   padding: 20px;
   margin-top: 40px;
   width: 100%;
   height: 100vh;
+  text-align: center;
 }

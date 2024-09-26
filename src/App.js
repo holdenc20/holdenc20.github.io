@@ -15,8 +15,10 @@ function App() {
           </ul>
         </nav>
         <div className="hero">
-          <h1>I am Casey Holden</h1>
-          <h2> I a ... at ...</h2>
+          <div className="hero-text">
+            <h1>I am Casey Holden</h1>
+            <h2> I a ... at ...</h2>
+          </div>
         </div>
       </header>
 
