@@ -3,8 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <section id="top">
-      </section>
+      <div className="top"></div>
       {/* Header Section */}
       <header className="App-header">
         <nav className="navbar">
