@@ -96,11 +96,19 @@ footer p {
   text-align: center;
 }
 
+.hero h1 {
+  text-align: center;
+}
+
+.hero p {
+  text-align: center;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: rgb(159, 159, 159);
+  background-color: rgb(159, 159, 159);
 }
