@@ -1,6 +1,18 @@
 import './App.css';
 
 function App() {
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    const heroSection = document.querySelector(".hero");
+    const heroHeight = heroSection.offsetHeight; // Get the height of the hero section
+  
+    if (window.scrollY > heroHeight) {
+      navbar.classList.add("scrolled");  // Add the class when scrolled past hero
+    } else {
+      navbar.classList.remove("scrolled");  // Remove the class when above hero
+    }
+  });
+
   return (
     <div className="App">
       <div className="top"></div>
