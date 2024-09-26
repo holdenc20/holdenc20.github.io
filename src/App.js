@@ -14,51 +14,9 @@ function App() {
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-
-        {/* Hero Section - 3 columns of cards */}
         <div className="hero">
-          <div className="column">
-            <div className="card">
-              <h2>About me</h2>
-              <p>Hi, I am ...</p>
-            </div>
-            <div className="card">
-              <h2>Skills</h2>
-              <p>
-                  - Programming : C, C++ etc
-              </p>
-              <p>
-                  - Web Development : HTML, CSS, JavaScript, React etc
-              </p>
-              <p>
-                  - Database : MySQL, Django etc
-              </p>
-              <p>
-                  - Tools : Git, GitHub, VSCode etc
-              </p>
-
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <h2>Prob add a image or something here</h2>
-              <p>maybe some text</p>
-            </div>
-          </div>
-          <div className="column">
-            <div className="card">
-              <h2>Projects</h2>
-              <ul>
-                <li>Project 1</li>
-                {/*image of project 1*/}
-                <li>Project 2</li>
-                {/*image of project 2*/}
-                <li>Project 3</li>
-                {/*image of project 3*/}
-              </ul>
-
-            </div>
-          </div>
+          <h1>I am Casey Holden</h1>
+          <h2> I a ... at ...</h2>
         </div>
       </header>
 

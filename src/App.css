@@ -94,34 +94,3 @@ footer p {
   width: 100%;
   height: 100vh;
 }
-
-.column {
-  margin-top: 10vh;
-  flex: 1; /* Ensures all columns take up equal width */
-  height: 90vh;
-}
-
-.card {
-  background-color: #cafffe;
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 20px; /* Rounded corners */
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color:#282c34;
-}
-
-.card p {
-  color: #555; /* Slightly darker text color */
-  padding: 20px;
-}
-
-.card:hover {
-  transform: translateY(-3px); /* Moves the card up slightly on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
