@@ -19,28 +19,43 @@ function App() {
           <div className="column">
             <div className="card">
               <h2>About me</h2>
-              <p>Some text...</p>
+              <p>Hi, I am ...</p>
             </div>
             <div className="card">
               <h2>Skills</h2>
               <p>
                   - Programming : C, C++ etc
+              </p>
+              <p>
                   - Web Development : HTML, CSS, JavaScript, React etc
+              </p>
+              <p>
                   - Database : MySQL, Django etc
+              </p>
+              <p>
                   - Tools : Git, GitHub, VSCode etc
               </p>
+
             </div>
           </div>
           <div className="column">
             <div className="card">
-              <h2>Card 2</h2>
-              <p>Some text...</p>
+              <h2>Prob add a image or something here</h2>
+              <p>maybe some text</p>
             </div>
           </div>
           <div className="column">
             <div className="card">
-              <h2>Card 3</h2>
-              <p>Some text...</p>
+              <h2>Projects</h2>
+              <ul>
+                <li>Project 1</li>
+                {/*image of project 1*/}
+                <li>Project 2</li>
+                {/*image of project 2*/}
+                <li>Project 3</li>
+                {/*image of project 3*/}
+              </ul>
+
             </div>
           </div>
         </div>
@@ -59,10 +74,58 @@ function App() {
         <p>My name is Casey.</p>
       </section>
 
+      {/* Projects Section */}
+      <section id="projects">
+        <h1>Projects</h1>
+        <p>Here are some of my projects</p>
+      </section>
+
+
       {/* Footer Section */}
       <footer>
-        <p>© 2024 Casey's Portfolio</p>
+        <p>Casey's Portfolio</p>
       </footer>
+      <p>
+      Experimental Network Project
+Goal
+Using a dataset of brain CT images provided by a company called Zeta Surgical, we will develop models to accurately classify and segment brain hemorrhages in these CT images.
+
+Zeta Surgical
+A company focused on democratizing the access to accurate, safe and fast image guidance, to unlock the use of image guidance directly at the point-of-care, and to enable new treatments in cases such as emergencies and bedside precedure.
+
+Example CT image with hemorrhage
+
+The CT Image Data Set
+512x512 CT image scans labeled with locatiions of the hemorrhage in the brain and pixel coordinates of the outline of the hemorrhage.
+
+Types of CT hemorrhages
+Attempt 1: Standard Neural Network
+Small-scale first attempt
+200 of each type of hemorrhaging
+Using sequential keras model
+Standard Neural Network Results
+Attempt 2: Visual Transformer
+This did not work...
+
+Attempt 3: Transfer Learning - VGG16
+VGG16 is a convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper "Very Deep Concolutional Networks for Large-Scale Image Recognition".
+
+VGG16
+VGG16 VGG16
+Attempt 4: Transfer Learning - ResNet
+A convolutional neural network model with a residual block
+
+ResNet ResNet
+ResNet ResNet
+Main Takeaways
+Our fourth attempt produced the best results for our data set, with a good accuracy of about 55-60% and no over fitting issues with the ResNet model.
+Despite the improved results seen with ResNet, accuracy was still below 60% which is not ideal for a medical implementation.
+Medical data is very difficult to apply current machine learning methods on, and more development is required in this area before we can begin to see reliable results.
+We are also restricted by the processing power of our computers as processing even fairly small amounts of this data was slow.
+Future implementation
+Transfer learning on MedNet: Sihong Chen, Kai Ma, Yefeng Zheng: “Med3D: Transfer Learning for 3D Medical Image Analysis”, 2019; [http://arxiv.org/abs/1904.00625 arXiv:1904.00625].
+Federated Learning with distributed updates: J. Zhao et al., "Federated Learning With Heterogeneity-Aware Probabilistic Synchronous Parallel on Edge," in IEEE Transactions on Services Computing, vol. 15, no. 2, pp. 614-626, 1 March-April 2022, doi: 10.1109/TSC.2021.3109910.
+      </p>
     </div>
   );
 }
