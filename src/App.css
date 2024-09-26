@@ -118,6 +118,6 @@ footer p {
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Moves the card up slightly on hover */
+  transform: translateY(-3px); /* Moves the card up slightly on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
