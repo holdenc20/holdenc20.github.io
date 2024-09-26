@@ -63,6 +63,7 @@ header {
 /* Main content section */
 main {
   padding-top: 80px; /* Add space for the fixed navbar */
+  color:
 }
 
 /* Basic section styles */
@@ -73,7 +74,7 @@ section {
 footer {
   background-color: #282c34;
   color: white;
-  padding: 10px;
+  padding-top: 10px;
   text-align: center;
   margin-top: 40px;
 }
