@@ -63,7 +63,6 @@ header {
 /* Main content section */
 main {
   padding-top: 80px; /* Add space for the fixed navbar */
-  color: gainsboro;
 }
 
 /* Basic section styles */
@@ -94,4 +93,14 @@ footer p {
   text-align: center;
   display: flex;
   align-items: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(159, 159, 159);
 }
