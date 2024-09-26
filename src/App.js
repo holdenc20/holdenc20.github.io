@@ -3,11 +3,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <section id="top">
+      </section>
       {/* Header Section */}
       <header className="App-header">
         <nav className="navbar">
           <ul>
-            <li><a href="#App">Home</a></li>
+            <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
